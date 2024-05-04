@@ -1,7 +1,14 @@
-# Gradient Decent, Newton, Conjugate Direction Methods
+# Gradient Decent Method, Newton Method and Conjugate Gradient Method
 
+- Test function: $f(x_1, x_2) = x_1^2 + (x_1 - x_2)^2 + \exp(-x_2)$
+- Initial point: $(5, -5)$
+- Methods:
+  - Gradient Decent Method: $\bm{d}^k = -\nabla f(\bm{x}^k)$
+  - Newton Method: $\bm{d}^k = -\nabla^2 f(\bm{x}^k)^{-1} \nabla f(\bm{x}^k)$
+  - Conjugate Gradient Method: $\bm{d}^k = -\nabla f(\bm{x}^k) + \beta^k \bm{d}^{k-1}$ where $\beta^k$ is designed to make $\bm{d}^k$ and $\bm{d}^{k-1}$ conjugate with respect to $\nabla^2 f(\bm{x}^k)$
+
+The following two figures showed outcomes of the three methods.
 ![](./contour_plot.png)
-
 ![](./objective_value.png)
 
 
