@@ -3,12 +3,14 @@
 - Test function: $f(x_1, x_2) = x_1^2 + (x_1 - x_2)^2 + \exp(-x_2)$
 - Initial point: $(5, -5)$
 - Methods:
-  - Gradient Decent Method: $\bm{d}^k = -\nabla f(\bm{x}^k)$
-  - Newton Method: $\bm{d}^k = -\nabla^2 f(\bm{x}^k)^{-1} \nabla f(\bm{x}^k)$
-  - Conjugate Gradient Method: $\bm{d}^k = -\nabla f(\bm{x}^k) + \beta^k \bm{d}^{k-1}$ where $\beta^k$ is designed to make $\bm{d}^k$ and $\bm{d}^{k-1}$ conjugate with respect to $\nabla^2 f(\bm{x}^k)$
+  - Gradient Decent Method: $\mathbf{d}^k = -\nabla f(\mathbf{x}^k)$
+  - Newton Method: $\mathbf{d}^k = -\nabla^2 f(\mathbf{x}^k)^{-1} \nabla f(\mathbf{x}^k)$
+  - Conjugate Gradient Method: $\mathbf{d}^k = -\nabla f(\mathbf{x}^k) + \beta^k \mathbf{d}^{k-1}$ where $\beta^k$ is designed to make $\mathbf{d}^k$ and $\mathbf{d}^{k-1}$ conjugate with respect to $\nabla^2 f(\mathbf{x}^k)$
 
 The following two figures showed outcomes of the three methods.
+
 ![](./contour_plot.png)
+
 ![](./objective_value.png)
 
 
