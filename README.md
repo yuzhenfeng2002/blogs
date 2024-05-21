@@ -12,6 +12,7 @@
 
 ## 课程笔记
 
+- [2023] [不完全信息博弈（by 姜力）](https://yuzhenfeng2002.github.io/blogs/docs/game_theory_lgt6006/PolyU_LGT6006.pdf)
 - [2021] [数据结构与算法（by 梁哲）](docs/algorithm_TJ/)
 
 ## 杂记
