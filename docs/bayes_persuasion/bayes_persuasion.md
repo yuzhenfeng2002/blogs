@@ -149,6 +149,7 @@ $$
 > $$
   V(\mu) = \sup \{z|(\mu, -z)\in \operatorname{conv}(\operatorname{epi}(-v(\mu)))\}
   $$
+
 根据上述分析，我们有推论
 > 最优信号的值为
 >
@@ -157,3 +158,32 @@ $$
   $$
 
 ## 什么时候能从说服中获利？
+
+我们从上述的分析中可以直接得到一些充分条件。给定某$\tau$，信号的价值是$\mathbb{E}_{\tau}[v(\mu)]$，而不给信号的默认值是$v(\mu_0) = v(\mathbb{E}_{\tau}[\mu])$。因此，只要存在$\tau$，使得
+$$
+\mathbb{E}_{\tau}[v(\mu)] > v(\mathbb{E}_{\tau}[\mu])
+$$
+信号发送者就能从说服中获利。这个不等式也就是Jesen不等式。所以当$v$是凹函数时，信息发送者不会获利；如果$v$是非凹的凸函数，那信息发送者就能够获利。
+
+一般来说，$v$既不是凸的也不是凹的。对于一般的情况，也有一些充分条件。
+
+> 定理 2.1
+> 
+> 如果没有*信息发送者愿意分享的信息*，则信息发送者不能从说服中获利。
+
+存在信息发送者愿意分享的信息定义为
+> 存在$\mu$，使得
+> $$
+  v(\mu) > \mathbb{E}_{\mu}[v(a(\mu_0), \omega)]
+  $$
+
+反之，我们有
+$$
+\begin{aligned}
+    \mathbb{E}_{\tau}[v(\mu)] = \sum_{\mu}v(\mu)\tau(\mu) \\
+    \leq \sum_{\mu} \tau(\mu) \sum_{\omega} v(a(\mu_0), \omega) \mu(\omega) \\
+    = \sum_{\omega} v(a(\mu_0), \omega) \sum_{\mu} \tau(\mu) \mu(\omega)\\
+    = \sum_{\omega} v(a(\mu_0), \omega) \mu_0(\omega) = v(\mu_0)
+\end{aligned}
+$$
+这意味着，信息发送者不能从说服中获利。
